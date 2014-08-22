@@ -8,3 +8,7 @@ listasLongFijaQueSuman 1 n = [[n]]
 listasLongFijaQueSuman l n = [m:xs | m  <- [1..n - 1],
                                      xs <- listasLongFijaQueSuman (l - 1) (n - m)]
 
+-- Ejercicio 8
+
+listasDeEnterosPositivos :: [[Int]]
+listasDeEnterosPositivos = [xs | n <- [1..], xs <- listasQueSuman n]
